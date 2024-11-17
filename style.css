@@ -1,0 +1,42 @@
+.main-content {
+    flex: 1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px; 
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 8px; 
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+    background-color: #007bff; 
+    border-radius: 5px;
+}
+.project-section {
+    display: none; 
+}
+
+.project-section:target {
+    display: block; 
+}
