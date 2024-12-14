@@ -1,0 +1,112 @@
+.main-content {
+    flex: 1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 1200px; 
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 8px; 
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+    background-color: #007bff; 
+    border-radius: 5px;
+}
+.project-section {
+    display: none; 
+}
+
+.project-section:target {
+    display: block; 
+}
+#checkboxInput {
+    display: none;
+  }
+  
+  .toggleSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: .2s;
+  }
+  
+  .toggleSwitch::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition-duration: .2s;
+    box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
+    border: 5px solid white;
+  }
+  
+  #checkboxInput:checked+.toggleSwitch::after {
+    transform: translateX(100%);
+    transition-duration: .2s;
+    background-color: white;
+  }
+  /* Switch background change */
+  #checkboxInput:checked+.toggleSwitch {
+    background-color: rgb(148, 118, 255);
+    transition-duration: .2s;
+  }
+ 
+.project-section img {
+    max-width: 200%;
+    max-height: 350px;
+    object-fit: cover;
+    position: relative; /* Makes top positioning relative to its container */
+    top: 50px; /* Moves the image 50px down */
+}
+/* Ensure the entire page takes up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the main content stretches to fill available space */
+.container {
+    flex: 1; /* Pushes the footer to the bottom */
+}
+
+/* Optional styling for the footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
